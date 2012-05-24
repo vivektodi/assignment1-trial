@@ -29,6 +29,9 @@ public class CollectNewspaperKarel extends SuperKarel {
 		turnLeft();
 		move();
 	}
+	public void lookForNewspaper() {
+		
+	}
 	private void pickUpNewspaper() {
 		pickBeeper();
 	}
