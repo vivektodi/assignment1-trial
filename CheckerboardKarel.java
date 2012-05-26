@@ -28,6 +28,11 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
+	private void walkLeft()
+	{
+		
+	}
+	
 	private void firstFillAndWalk()
 	{
 		putBeeper();
