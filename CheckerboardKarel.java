@@ -22,7 +22,19 @@ public class CheckerboardKarel extends SuperKarel {
 		fillFirstAndWalk();
 		if (frontIsBlocked())
 		{
-			
+			turnLeft();
+			if (beepersPresent())
+			{
+				move();
+				turnLeft();
+				skipFirstAndWalk();
+			}
+			else
+			{
+				move();
+				turnLeft();
+				fillFirstAndWalk();
+			}
 		}
 		while(frontIsClear() && (leftIsClear() || rightIsClear())) 
 		{
