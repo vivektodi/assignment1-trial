@@ -21,6 +21,9 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		fillFirstAndWalk();
 		while ((notFacingEast() && frontIsClear() && leftIsClear()) || (notFacingWest() && frontIsClear() && rightIsClear()))
+		{
+			
+		}
 	}
 	
 	
