@@ -20,7 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void startSolving()
 	{
 		putBeeper();
-		while(frontIsBlocked() && (leftIsBlocked() || rightIsBlocked()))
+		while(frontIsClear() && (leftIsBlocked() || rightIsBlocked()))
 		{
 			if (facingEast())
 			{
