@@ -23,7 +23,7 @@ public class CheckerboardKarel extends SuperKarel {
 		walkLeft();
 	}
 	
-	private void walkLeft()
+	private void walkRight()
 	{
 		if (beepersPresent())
 		{
