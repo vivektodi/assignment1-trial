@@ -20,16 +20,20 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void placeCheckers()
 	{
-		walkTowardsRight();
-		if(frontIsBlocked())
+		while (frontIsClear())
 		{
-			takeALeftTurn();
+			walkTowardsRight();
+			if(frontIsBlocked())
+			{
+				takeALeftTurn();
+			}
+			walkTowardsLeft();
+			if(frontIsBlocked())
+			{
+				takeARightTurn();
+			}
 		}
-		walkTowardsLeft();
-		if(frontIsBlocked())
-		{
-			takeARightTurn();
-		}
+		
 	}
 	
 }
