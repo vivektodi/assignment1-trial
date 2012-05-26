@@ -23,6 +23,7 @@ public class CheckerboardKarel extends SuperKarel {
 		while(frontIsClear())
 		{
 			move();
+			if (frontIsBlocked())
 			move();
 			putBeeper();
 		}
