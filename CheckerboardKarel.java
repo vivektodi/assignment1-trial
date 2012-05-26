@@ -31,7 +31,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		else
 		{
-			firstFillAndWalk()
+			firstFillAndWalk();
 		}
 	}
 	
