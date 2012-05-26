@@ -21,6 +21,7 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		firstFillAndWalk();
 	}
+	
 	private void firstFillAndWalk()
 	{
 		putBeeper();
