@@ -41,6 +41,7 @@ public class CheckerboardKarel extends SuperKarel {
 			{
 				move();
 				turnLeft();
+				skipFirstAndWalk();
 				walkLeft();
 			}
 			else
