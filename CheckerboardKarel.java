@@ -30,6 +30,14 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		putBeeper();
 		while(frontIsClear())
+		{
+			move();
+			if(frontIsClear())
+			{
+				move();
+				putBeeper();
+			}
+		}
 	}
 	
 	private void skipFirstAndWalk()
