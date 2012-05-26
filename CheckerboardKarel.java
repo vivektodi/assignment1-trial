@@ -30,7 +30,10 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void walkLeft()
 	{
-		
+		if (beepersPresent())
+		{
+			
+		}
 	}
 	
 	private void firstFillAndWalk()
