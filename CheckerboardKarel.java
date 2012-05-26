@@ -34,7 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 		{
 			firstFillAndWalk();
 		}
-		while(frontIsBlocked())
+		if (frontIsBlocked())
 		{
 			turnLeft();
 			if (beepersPresent())
