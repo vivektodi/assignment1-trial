@@ -38,7 +38,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void skipFirstAndWalk()
 	{
 		move();
-		firstFirstAndWalk();
+		firstFillAndWalk();
 	}
 	
 	private void firstFillAndWalk()
