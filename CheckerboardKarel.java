@@ -14,30 +14,24 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run()
 	{
-		startSolving();
-		
+		startSolving();	
 	}
 	
 	private void startSolving()
 	{
 		putBeeper();
 		walkLeft();
-		firstFillAndWalk();
-		if (beepersPresent())
-		{
-			
-		}
 	}
 	
-	private void skipFirstAndWalk()
-	{
-		
-	}
 	private void walkLeft()
 	{
 		if (beepersPresent())
 		{
 			
+		}
+		else
+		{
+			firstFillAndWalk()
 		}
 	}
 	
