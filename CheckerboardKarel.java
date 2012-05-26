@@ -34,7 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 		{
 			firstFillAndWalk();
 		}
-		if (frontIsBlocked())
+		while(frontIsBlocked())
 		{
 			turnLeft();
 			if (beepersPresent())
@@ -50,6 +50,7 @@ public class CheckerboardKarel extends SuperKarel {
 				firstFillAndWalk();
 			}
 		}
+		
 	}
 	
 	private void skipFirstAndWalk()
