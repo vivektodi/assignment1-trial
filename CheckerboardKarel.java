@@ -47,7 +47,7 @@ public class CheckerboardKarel extends SuperKarel {
 					turnRight();
 					skipFirstAndWalk();
 				}
-				else
+				else if (noBeepersPresent() && frontIsClear())
 				{
 					move();
 					turnRight();
