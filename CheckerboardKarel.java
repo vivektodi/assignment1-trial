@@ -29,7 +29,7 @@ public class CheckerboardKarel extends SuperKarel {
 	private void fillFirstAndWalk()
 	{
 		putBeeper();
-		while()
+		while(frontIsClear())
 	}
 	
 	private void skipFirstAndWalk()
