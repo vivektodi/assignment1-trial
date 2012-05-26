@@ -14,62 +14,6 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run()
 	{
-		startSolving();	
-	}
-	
-	private void startSolving()
-	{
-		putBeeper();
-		walkRight();
-	}
-	
-	private void walkRight()
-	{
-		if (beepersPresent())
-		{
-			move();
-			skipFirstAndWalk();
-		}
-		else
-		{
-			firstFillAndWalk();
-		}
-		if (frontIsBlocked())
-		{
-			turnLeft();
-			if (beepersPresent())
-			{
-				move();
-				turnLeft();
-				skipFirstAndWalk();
-			}
-			else
-			{
-				move();
-				turnLeft();
-				firstFillAndWalk();
-			}
-		}
-		
-	}
-	
-	private void skipFirstAndWalk()
-	{
-		move();
-		firstFillAndWalk();
-	}
-	
-	private void firstFillAndWalk()
-	{
-		putBeeper();
-		while(frontIsClear())
-		{
-			move();
-			if (frontIsClear())
-			{
-				move();
-				putBeeper();
-			}
-		}
+		startSolving();
 	}
 }
