@@ -14,11 +14,14 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run()
 	{
+		
 		placeCheckers();
 	}
 	
 	private void placeCheckers()
 	{
+		while (frontIsClear()) 
+		{
 		while (frontIsClear())
 		{
 			walk();
@@ -31,6 +34,7 @@ public class CheckerboardKarel extends SuperKarel {
 			{
 				takeARightTurn();
 			}
+		}
 		}
 		
 	}
