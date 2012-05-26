@@ -14,11 +14,18 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run()
 	{
+		putBeeper();
 		startSolving();
 	}
 	
 	private void startSolving()
 	{
-		
+		while()
+		{
+			if (facingEast())
+			{
+				walkEast();
+			}
+		}
 	}
 }
