@@ -14,21 +14,13 @@ public class CheckerboardKarel extends SuperKarel {
 	// You fill in this part
 	public void run()
 	{
+		putBeeper();
 		placeCheckers();
 	}
 	
 	private void placeCheckers()
 	{
-		putBeeper();
-		while(frontIsClear())
-		{
-			move();
-			if (frontIsBlocked())
-			{
-				turnLeft();
-			}
-			move();
-			putBeeper();
-		}
+		
+		
 	}
 }
