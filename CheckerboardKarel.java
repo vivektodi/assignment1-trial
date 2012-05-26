@@ -73,7 +73,8 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void skipFirstAndWalk()
 	{
-		move();
+		if (frontIsClear())
+			move();
 		fillFirstAndWalk();
 	}
 }
