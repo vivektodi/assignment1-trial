@@ -35,4 +35,16 @@ public class StoneMasonKarel extends SuperKarel {
 			move();
 		}
 	}
+	
+	public void completeColumn()	{
+		while(frontIsClear()){
+			if(noBeepersPresent()){
+				putBeeper();
+			}
+			move();
+		}
+		if(noBeepersPresent()){
+			putBeeper();
+		}
+	}
 }
