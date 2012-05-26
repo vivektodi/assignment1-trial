@@ -25,13 +25,13 @@ public class CheckerboardKarel extends SuperKarel {
 			if (frontIsBlocked() && facingEast())
 			{
 				turnLeft();
-				if (beepersPresent())
+				if (beepersPresent() && frontIsClear())
 				{
 					move();
 					turnLeft();
 					skipFirstAndWalk();
 				}
-				else
+				else if (noBeepersPresent() && frontIsClear())
 				{
 					move();
 					turnLeft();
