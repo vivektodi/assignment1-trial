@@ -22,12 +22,12 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		while (frontIsClear())
 		{
-			walkTowardsRight();
+			walk();
 			if(frontIsBlocked())
 			{
 				takeALeftTurn();
 			}
-			walkTowardsLeft();
+			walk();
 			if(frontIsBlocked())
 			{
 				takeARightTurn();
@@ -35,7 +35,7 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		
 	}
-	private void walkTowardsRight()
+	private void walk()
 	{
 		while(frontIsClear())
 		{
@@ -54,5 +54,10 @@ public class CheckerboardKarel extends SuperKarel {
 		move();
 		turnLeft();
 	}
-	
+	private void takeARightTurn()
+	{
+		turnRight();
+		move();
+		turnRight();
+	}
 }
