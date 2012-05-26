@@ -19,23 +19,17 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void startSolving()
 	{
-		putBeeper();
-		while(frontIsClear() && (leftIsClear() || rightIsClear()))
+		fillFirstAndWalk();
+		while(frontIsClear())
 		{
-			if (facingEast())
-			{
-				walkEast();
-			}
-			else
-			{
-				walkWest();
-			}
+			
 		}
 	}
 	
 	private void fillFirstAndWalk()
 	{
-		
+		putBeeper();
+		while()
 	}
 	
 	private void skipFirstAndWalk()
