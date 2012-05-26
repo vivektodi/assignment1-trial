@@ -48,6 +48,9 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 	}
 	
-	private void 
+	private void takeALeftTurn()
+	{
+		
+	}
 	
 }
