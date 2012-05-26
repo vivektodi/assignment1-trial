@@ -17,7 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		solve();
 	}
 	
-	private solve() 
+	private void solve() 
 	{
 		
 	}
