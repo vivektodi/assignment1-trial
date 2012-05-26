@@ -20,8 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void placeCheckers()
 	{
-		while (frontIsClear()) 
-		{
+		
 		while (frontIsClear())
 		{
 			walk();
