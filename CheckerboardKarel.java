@@ -15,55 +15,9 @@ public class CheckerboardKarel extends SuperKarel {
 	public void run()
 	{
 		
-		placeCheckers();
+
 	}
 	
-	private void placeCheckers()
-	{
-		
-		while (frontIsClear())
-		{
-			walk();
-			if(frontIsBlocked())
-			{
-				if(leftIsClear())
-					takeALeftTurn();
-			}
-			if (frontIsClear())
-				walk();
-			if(frontIsBlocked())
-			{
-				if(rightIsClear())
-					takeARightTurn();
-			}
-		}
-		
-	}
-	private void walk()
-	{
-		
-		while(frontIsClear())
-		{
-			move();
-			if (frontIsClear())
-			{
-				move();
-				putBeeper();
-			}
-		}
-	}
-	
-	private void takeALeftTurn()
-	{
-		turnLeft();
-		move();
-		turnLeft();
-		
-	}
-	private void takeARightTurn()
-	{
-		turnRight();
-		move();
-		turnRight();
-	}
+
+
 }
