@@ -17,6 +17,7 @@ public class CheckerboardKarel extends SuperKarel {
 		startSolving();
 		
 	}
+	
 	private void startSolving()
 	{
 		firstFillAndWalk();
