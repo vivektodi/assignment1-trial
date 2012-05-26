@@ -21,7 +21,8 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		fillFirstAndWalk();
 
-		while(frontIsClear() && (leftIsClear() || rightIsClear()))
+		while(frontIsClear() && (leftIsClear() || rightIsClear())) 
+		{
 		if (frontIsBlocked() && facingEast())
 		{
 			turnLeft();
@@ -53,6 +54,7 @@ public class CheckerboardKarel extends SuperKarel {
 				turnRight();
 				fillFirstAndWalk();
 			}
+		}
 		}
 	}
 	
