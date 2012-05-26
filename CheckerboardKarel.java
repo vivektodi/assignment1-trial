@@ -27,6 +27,7 @@ public class CheckerboardKarel extends SuperKarel {
 	{
 		if (beepersPresent())
 		{
+			move();
 			skipFirstAndWalk();
 		}
 		else
