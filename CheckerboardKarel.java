@@ -41,7 +41,7 @@ public class CheckerboardKarel extends SuperKarel {
 			if(frontIsBlocked() && facingWest())
 			{
 				turnRight();
-				if (beepersPresent())
+				if (beepersPresent() && frontIsClear())
 				{
 					move();
 					turnRight();
