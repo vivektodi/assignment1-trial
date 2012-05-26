@@ -20,7 +20,7 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void placeCheckers()
 	{
-		
+		walkTowardsRight();
 		
 	}
 }
