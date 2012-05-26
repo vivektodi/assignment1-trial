@@ -30,6 +30,7 @@ public class CheckerboardKarel extends SuperKarel {
 				if(leftIsClear())
 					takeALeftTurn();
 			}
+			if (frontIsClear())
 			walk();
 			if(frontIsBlocked())
 			{
