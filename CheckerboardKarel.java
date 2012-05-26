@@ -54,20 +54,16 @@ public class CheckerboardKarel extends SuperKarel {
 	
 	private void takeALeftTurn()
 	{
-		if (frontIsClear())
-		{
-			turnLeft();
-			move();
-			turnLeft();
-		}
+		turnLeft();
+		move();
+		turnLeft();
+		
 	}
 	private void takeARightTurn()
 	{
-		if (frontIsClear())
-		{
-			turnRight();
-			move();
-			turnRight();
-		}
+		turnRight();
+		move();
+		turnRight();
+		
 	}
 }
