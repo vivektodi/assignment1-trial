@@ -35,5 +35,9 @@ public class CheckerboardKarel extends SuperKarel {
 		}
 		
 	}
+	private void walkTowardsRight()
+	{
+		move();
+	}
 	
 }
